@@ -1,0 +1,109 @@
+/* Google Fonts - Orbitron, Space-Mono */
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+video{
+        object-fit: cover;
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: -10;
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    color: white;
+}
+.content{
+    width: 30%;
+    z-index: 10;
+    font-family: 'Space Mono', monospace;
+    background-color: black;
+    border-radius: 10px;
+    opacity: 0.6;
+}
+h1{
+    font-size: 2.5rem;
+    font-family: 'Orbitron', sans-serif;
+    color: #214272;
+    margin-top: 20px;
+}
+p{
+    font-size: 3rem;
+    margin: 20px;
+}
+button{
+    width: 100px;
+    height: 40px;
+    font-size: 1.4rem;
+    color: grey;
+    margin: 30px 0px;
+    border-radius: 50px;
+    transition: .5s;
+    border-style: none;
+
+}
+#start:hover{
+    background-color: #eec0c6;
+    background-image: linear-gradient(315deg, #eec0c6 0%, #7ee8fa 74%);
+    cursor: pointer;
+}
+#stop:hover{
+    background-color: #90d5ec;
+    background-image: linear-gradient(315deg, #90d5ec 0%, #fc575e 74%);
+    cursor: pointer;
+}
+#reset:hover{
+    background-color: #7f5a83;
+    background-image: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%);
+    color: white;
+    cursor: pointer;
+}
+
+/*************** responsiveness ****************/
+
+@media (max-width:1266px){
+    .content{
+        width: 40%;
+    }
+}
+@media (max-width:1066px){
+    .content{
+        width: 40%;
+    }
+}
+@media (max-width:914px){
+    .content{
+        width: 40%;
+    }
+}
+@media (max-width:800px){
+    .content{
+        width: 50%;
+    }
+
+}
+@media (max-width:640px){
+    .content{
+        width: 60%;
+    }
+    
+
+}
+@media (max-width:545px){
+    .content{
+        width: 70%;
+    }
+ 
+
+}
